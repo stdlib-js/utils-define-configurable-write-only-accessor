@@ -24,7 +24,23 @@ limitations under the License.
 
 > [Define][@stdlib/utils/define-property] a configurable **write-only** accessor.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-define-configurable-write-only-accessor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
@@ -32,32 +48,8 @@ limitations under the License.
 
 <!-- eslint-disable id-length -->
 
-To use in Observable,
-
 ```javascript
-setConfigurableWriteOnlyAccessor = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-write-only-accessor@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var setConfigurableWriteOnlyAccessor = require( 'path/to/vendor/umd/utils-define-configurable-write-only-accessor/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-write-only-accessor@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.setConfigurableWriteOnlyAccessor;
-})();
-</script>
+var setConfigurableWriteOnlyAccessor = require( '@stdlib/utils-define-configurable-write-only-accessor' );
 ```
 
 #### setConfigurableWriteOnlyAccessor( obj, prop, setter )
@@ -104,13 +96,8 @@ var bool = ( val === 'boop' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-write-only-accessor@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var setConfigurableWriteOnlyAccessor = require( '@stdlib/utils-define-configurable-write-only-accessor' );
 
 function Foo( secret ) {
     if ( !(this instanceof Foo) ) {
@@ -127,11 +114,6 @@ function Foo( secret ) {
 var foo = new Foo( 'beep' );
 
 foo.secret = 'boop';
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -146,11 +128,11 @@ foo.secret = 'boop';
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/define-configurable-read-only-property`][@stdlib/utils/define-configurable-read-only-property]</span><span class="delimiter">: </span><span class="description">define a configurable read-only property.</span>
--   <span class="package-name">[`@stdlib/utils/define-configurable-read-only-accessor`][@stdlib/utils/define-configurable-read-only-accessor]</span><span class="delimiter">: </span><span class="description">define a configurable read-only accessor.</span>
--   <span class="package-name">[`@stdlib/utils/define-configurable-read-write-accessor`][@stdlib/utils/define-configurable-read-write-accessor]</span><span class="delimiter">: </span><span class="description">define a configurable read-write accessor.</span>
--   <span class="package-name">[`@stdlib/utils/define-property`][@stdlib/utils/define-property]</span><span class="delimiter">: </span><span class="description">define (or modify) an object property.</span>
--   <span class="package-name">[`@stdlib/utils/define-write-only-accessor`][@stdlib/utils/define-write-only-accessor]</span><span class="delimiter">: </span><span class="description">define a write-only accessor.</span>
+-   <span class="package-name">[`@stdlib/utils-define-configurable-read-only-property`][@stdlib/utils/define-configurable-read-only-property]</span><span class="delimiter">: </span><span class="description">define a configurable read-only property.</span>
+-   <span class="package-name">[`@stdlib/utils-define-configurable-read-only-accessor`][@stdlib/utils/define-configurable-read-only-accessor]</span><span class="delimiter">: </span><span class="description">define a configurable read-only accessor.</span>
+-   <span class="package-name">[`@stdlib/utils-define-configurable-read-write-accessor`][@stdlib/utils/define-configurable-read-write-accessor]</span><span class="delimiter">: </span><span class="description">define a configurable read-write accessor.</span>
+-   <span class="package-name">[`@stdlib/utils-define-property`][@stdlib/utils/define-property]</span><span class="delimiter">: </span><span class="description">define (or modify) an object property.</span>
+-   <span class="package-name">[`@stdlib/utils-define-write-only-accessor`][@stdlib/utils/define-write-only-accessor]</span><span class="delimiter">: </span><span class="description">define a write-only accessor.</span>
 
 </section>
 
@@ -227,15 +209,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils-define-configurable-read-only-property/tree/umd
+[@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils-define-configurable-read-only-property
 
-[@stdlib/utils/define-configurable-read-only-accessor]: https://github.com/stdlib-js/utils-define-configurable-read-only-accessor/tree/umd
+[@stdlib/utils/define-configurable-read-only-accessor]: https://github.com/stdlib-js/utils-define-configurable-read-only-accessor
 
-[@stdlib/utils/define-configurable-read-write-accessor]: https://github.com/stdlib-js/utils-define-configurable-read-write-accessor/tree/umd
+[@stdlib/utils/define-configurable-read-write-accessor]: https://github.com/stdlib-js/utils-define-configurable-read-write-accessor
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property/tree/umd
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
-[@stdlib/utils/define-write-only-accessor]: https://github.com/stdlib-js/utils-define-write-only-accessor/tree/umd
+[@stdlib/utils/define-write-only-accessor]: https://github.com/stdlib-js/utils-define-write-only-accessor
 
 <!-- </related-links> -->
 
