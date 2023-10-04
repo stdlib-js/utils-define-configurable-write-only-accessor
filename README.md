@@ -44,7 +44,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import setConfigurableWriteOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-write-only-accessor@deno/mod.js';
+import setConfigurableWriteOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-write-only-accessor@v0.1.1-deno/mod.js';
 ```
 
 #### setConfigurableWriteOnlyAccessor( obj, prop, setter )
@@ -92,7 +92,7 @@ var bool = ( val === 'boop' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import setConfigurableWriteOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-write-only-accessor@deno/mod.js';
+import setConfigurableWriteOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-write-only-accessor@v0.1.1-deno/mod.js';
 
 function Foo( secret ) {
     if ( !(this instanceof Foo) ) {
