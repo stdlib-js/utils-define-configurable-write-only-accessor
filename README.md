@@ -44,7 +44,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import setConfigurableWriteOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-write-only-accessor@esm/index.mjs';
+import setConfigurableWriteOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-write-only-accessor@v0.2.1-esm/index.mjs';
 ```
 
 #### setConfigurableWriteOnlyAccessor( obj, prop, setter )
@@ -97,7 +97,7 @@ var bool = ( val === 'boop' );
 <body>
 <script type="module">
 
-import setConfigurableWriteOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-write-only-accessor@esm/index.mjs';
+import setConfigurableWriteOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-configurable-write-only-accessor@v0.2.1-esm/index.mjs';
 
 function Foo( secret ) {
     if ( !(this instanceof Foo) ) {
